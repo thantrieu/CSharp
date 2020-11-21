@@ -30,7 +30,7 @@ namespace ExercisesVersion1
                 {
                     case 0:
                         Console.WriteLine("Cam on quy khach da su dung dich vu cua chung toi");
-                        break;
+                        return; // thoat vong lap vo han
 
                     case 1:
                         if (isLogin)
@@ -93,7 +93,7 @@ namespace ExercisesVersion1
                                     amount = int.Parse(Console.ReadLine());
                                     if (amount % 10000 != 0)
                                     {
-                                        Console.WriteLine("Vui nhap so tien la boi so cua 10k!");
+                                        Console.WriteLine("Vui long nhap so tien la boi so cua 10k!");
                                         amount = 0;
                                         isWithdrawable = false;
                                     }
